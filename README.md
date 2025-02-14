@@ -16,20 +16,20 @@ $ nix flake new --template github:nebunix/nebunix#starter-minimal ~/.nixos
 $ cd ~/.nixos
 ```
 
-2. Set your desired host name by editing the `hostName` variable in `flake.nix`.
-The host name will be the name of your configuration. A common approach is to
-use the name of your device (for example "surface-laptop-go").
-
-3. Copy your hardware configuration into `hosts/nebunix/`. If you are on a fresh
-install of NixOS, you can do this using the following command:
+2. Generate your hardware configuration into `hosts/nebunix/` using the following command:
 
 ```bash
-$ sudo cp /etc/nixos/hardware-configuration.nix hosts/nebunix
+$ nixos-generate-config --dir hosts/nebunix
 ```
 
-4. Set your desired user name by editing the `userName` variable in `flake.nix`.
+3. Set your desired user name by editing the `userName` variable in `flake.nix`.
 
-5. Edit the options in `hosts/nebunix/configuration.nix`. 
+4. Edit the options in `hosts/nebunix/configuration.nix`. You'll at least want to
+change the `localization.consoleKeyMap` and `user.fullName` values.
+
+5. Set your desired host name by editing the `hostName` variable in `flake.nix`.
+The host name will be the name of your configuration. A common approach is to
+use the name of your device (for example "surface-laptop-go").
 
 6. `nebunix` expects your configuration to be in `hosts/<host name>/`. If you
 changed the host name in `flake.nix`, you will have to rename `hosts/nebunix`
@@ -45,8 +45,8 @@ $ mv hosts/nebunix hosts/<host name>
 $ sudo nixos-rebuild switch --flake .#<host name>
 ```
 
-After running this command the first time, you may omit the host name
-in any future rebuilds:
+After running this command for the first time, you can omit the host name in any
+future rebuilds:
 
 ```bash
 $ sudo nixos-rebuild switch --flake .
