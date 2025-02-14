@@ -21,8 +21,8 @@
               };
 
               modules = [
-                builtins.toPath "./hosts/${systemInformation.hostName}/configuration.nix"
-                builtins.toPath "./hosts/${systemInformation.hostName}/hardware-configuration.nix"
+                "./hosts/${systemInformation.hostName}/configuration.nix"
+                "./hosts/${systemInformation.hostName}/hardware-configuration.nix"
               ] ++ modules;
             };
           };
