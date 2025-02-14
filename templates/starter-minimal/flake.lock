@@ -1,15 +1,38 @@
 {
   "nodes": {
+    "home-manager": {
+      "inputs": {
+        "nixpkgs": [
+          "nebunix",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1736373539,
+        "narHash": "sha256-dinzAqCjenWDxuy+MqUQq0I4zUSfaCvN9rzuCmgMZJY=",
+        "owner": "nix-community",
+        "repo": "home-manager",
+        "rev": "bd65bc3cde04c16755955630b344bc9e35272c56",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "ref": "release-24.11",
+        "repo": "home-manager",
+        "type": "github"
+      }
+    },
     "nebunix": {
       "inputs": {
+        "home-manager": "home-manager",
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1739553668,
-        "narHash": "sha256-Ncy7Ju4uJZE57nZLJeyzHbCInDn7xhgxLjSUzi5lTkw=",
+        "lastModified": 1739563196,
+        "narHash": "sha256-keodVyV+BfVHVEKEQcjIAKzn87JYl9H4eWUtsr6MjV0=",
         "owner": "nebunix",
         "repo": "nebunix",
-        "rev": "fffb6a66c38c4fa2741fecb2b2ca05ab63ef1301",
+        "rev": "e933c05ac923118b30d47595da44ebfc6b049992",
         "type": "github"
       },
       "original": {
@@ -20,11 +43,11 @@
     },
     "nebunix-base": {
       "locked": {
-        "lastModified": 1739553933,
-        "narHash": "sha256-jMpa2u07llTxkJaGl+hHSlba/C5G43JHSobrz/ozglM=",
+        "lastModified": 1739563180,
+        "narHash": "sha256-pPi6iRVLXR/AJ7/Vu+6Yx4VoHkmgda+f8UOLS2OAqj8=",
         "owner": "nebunix",
         "repo": "base",
-        "rev": "17ed7a264610643bb2b010675fbbf233891d8d61",
+        "rev": "9c69c8383c14be685dc3c73ba0d29c4733143156",
         "type": "github"
       },
       "original": {
