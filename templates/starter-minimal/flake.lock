@@ -28,11 +28,11 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1739563930,
-        "narHash": "sha256-3pYb1b2lV36kS6eSqpYrR150t2M+gmK9L0mmpeMIa7A=",
+        "lastModified": 1739564199,
+        "narHash": "sha256-Q7CflmmurPP8thM/DwBRNr+a7JrMfMTXC7gmB0Hlvm0=",
         "owner": "nebunix",
         "repo": "nebunix",
-        "rev": "419d691d1965ec463cf4302985dc88f317ac1c37",
+        "rev": "f0f6c79b30c0a16cc4777bd55512ca80a9a8b46c",
         "type": "github"
       },
       "original": {
@@ -43,11 +43,11 @@
     },
     "nebunix-base": {
       "locked": {
-        "lastModified": 1739564176,
-        "narHash": "sha256-9L2NJH3tkBeQS4RGVkQWP0LOQwpYDe/vWGn3x8tj5aA=",
+        "lastModified": 1739564314,
+        "narHash": "sha256-j4lp49hCf1j/8pykwwmE/4DzGxAYZm6UaR2dSySKfBI=",
         "owner": "nebunix",
         "repo": "base",
-        "rev": "05acc271450484430f520557c990c11596d0285d",
+        "rev": "8b1335f5294b7d67d718aea95d53517004b9a2b0",
         "type": "github"
       },
       "original": {
