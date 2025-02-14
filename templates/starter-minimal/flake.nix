@@ -5,14 +5,21 @@
   };
 
   outputs =
-    { home-manager, nebunix, ... }@inputs:
+    { nebunix, ... }@inputs:
     {
       nixosConfigurations =
         nebunix.utils.mkConfiguration {
-          hostName = "nebunix";
-          system = "x86_64-linux";
-          userName = "john";
-          fullName = "John Doe";
+          systemInformation = {
+            hostName = "nebunix";
+            system = "x86_64-linux";
+            user = {
+              userName = "john";
+              fullName = "John Doe";
+            };
+          };
+          modules = [
+            inputs.nebunix-base.nixosModules.default
+          ];
         };
     };
 }

@@ -9,31 +9,21 @@
       utils = {
         mkConfiguration =
           {
-            hostName,
-            system,
-            userName,
-            fullName,
+            systemInformation,
+            modules,
           }:
           {
-            "${hostName}" = nixpkgs.lib.nixosSystem {
-              inherit system;
+            "${systemInformation.hostName}" = nixpkgs.lib.nixosSystem {
+              inherit (systemInformation) system;
 
               specialArgs = {
-                systemInformation = {
-                  user = {
-                    inherit userName;
-                    inherit fullName;
-                  };
-                  inherit hostName;
-                };
+                inherit systemInformation;
               };
 
               modules = [
-                (./hosts + "/${hostName}/configuration.nix")
-                (./hosts + "/${hostName}/hardware-configuration.nix")
-
-                inputs.nebunix-base.nixosModules.default
-              ];
+                (./hosts + "/${systemInformation.hostName}/configuration.nix")
+                (./hosts + "/${systemInformation.hostName}/hardware-configuration.nix")
+              ] ++ modules;
             };
           };
       };
