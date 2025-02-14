@@ -24,7 +24,7 @@
               modules = [
                 (configPath + "/hosts/${systemInformation.hostName}/configuration.nix")
                 (configPath + "/hosts/${systemInformation.hostName}/hardware-configuration.nix")
-              ] ++ (map (nebunixModule: nebunixModule.nixosModules.default));
+              ] ++ map (nebunixModule: nebunixModule.nixosModules.default) nebunixModules;
             };
           };
       };
