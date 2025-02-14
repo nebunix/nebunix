@@ -20,8 +20,8 @@
                 inherit system;
 
                 modules = [
-                  "./hosts/${name}/configuration.nix"
-                  "./hosts/${name}/hardware-configuration.nix"
+                  (./hosts + "/${name}/configuration.nix")
+                  (./hosts + "/${name}/hardware-configuration.nix")
                 ];
               };
             };
