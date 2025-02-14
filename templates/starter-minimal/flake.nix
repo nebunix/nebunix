@@ -42,7 +42,7 @@
                   (./hosts + "/${hostName}/configuration.nix")
                   (./hosts + "/${hostName}/hardware-configuration.nix")
 
-                  inputs.nebunix-base.nixosModules.base
+                  inputs.nebunix-base.nixosModules.default
                 ];
               };
             };

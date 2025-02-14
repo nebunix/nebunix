@@ -23,11 +23,11 @@
     },
     "nebunix-base": {
       "locked": {
-        "lastModified": 1739548033,
-        "narHash": "sha256-gCdS47XjE/u0UkC7N4fANewUfNyiZ/txEY7BCi0aXhc=",
+        "lastModified": 1739549058,
+        "narHash": "sha256-2tIk5gkmRzYSvLo2AKsSzevXnnfTQHyO6qPRtbDBNZE=",
         "owner": "nebunix",
         "repo": "base",
-        "rev": "f5a997a85ae2116804656f330e61e01472cec99e",
+        "rev": "bc14a002c2631b5738c8b0afc49436fb845362cb",
         "type": "github"
       },
       "original": {
