@@ -19,13 +19,13 @@
         let
           mkConfiguration =
             {
-              name,
+              hostName,
               system,
               userName,
               fullName,
             }:
             {
-              "${name}" = nixpkgs.lib.nixosSystem {
+              "${hostName}" = nixpkgs.lib.nixosSystem {
                 inherit system;
 
                 specialArgs = {
@@ -38,8 +38,8 @@
                 };
 
                 modules = [
-                  (./hosts + "/${name}/configuration.nix")
-                  (./hosts + "/${name}/hardware-configuration.nix")
+                  (./hosts + "/${hostName}/configuration.nix")
+                  (./hosts + "/${hostName}/hardware-configuration.nix")
 
                   inputs.nebunix-base.nixosModules.base
                 ];
@@ -47,7 +47,7 @@
             };
         in
         mkConfiguration {
-          name = "nebunix";
+          hostName = "nebunix";
           system = "x86_64-linux";
           userName = "john";
           fullName = "John Doe";
