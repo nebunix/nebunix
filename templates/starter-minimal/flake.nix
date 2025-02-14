@@ -11,10 +11,7 @@
         systemInformation = {
           hostName = "nebunix";
           system = "x86_64-linux";
-          user = {
-            userName = "john";
-            fullName = "John Doe";
-          };
+          userName = "john";
         };
         nebunixModules = with inputs; [
           nebunix-base

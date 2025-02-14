@@ -1,5 +1,10 @@
-{ ... }: {
+{ ... }:
+{
   config.nebunix = {
+    user = {
+      fullName = "John Doe";
+    };
+
     localization = {
       consoleKeyMap = "us";
       timeZone = "UTC";
