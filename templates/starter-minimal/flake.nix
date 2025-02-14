@@ -7,47 +7,15 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    nebunix-base = {
-      url = "github:nebunix/base";
-    };
+    nebunix.url = "github:nebunix/nebunix";
+    nebunix-base.url = "github:nebunix/base";
   };
 
   outputs =
-    { home-manager, nixpkgs, ... }@inputs:
+    { home-manager, nebunix, nixpkgs, ... }@inputs:
     {
       nixosConfigurations =
-        let
-          mkConfiguration =
-            {
-              hostName,
-              system,
-              userName,
-              fullName,
-            }:
-            {
-              "${hostName}" = nixpkgs.lib.nixosSystem {
-                inherit system;
-
-                specialArgs = {
-                  systemInformation = {
-                    user = {
-                      inherit userName;
-                      inherit fullName;
-                    };
-                    inherit hostName;
-                  };
-                };
-
-                modules = [
-                  (./hosts + "/${hostName}/configuration.nix")
-                  (./hosts + "/${hostName}/hardware-configuration.nix")
-
-                  inputs.nebunix-base.nixosModules.default
-                ];
-              };
-            };
-        in
-        mkConfiguration {
+        nebunix.utils.mkConfiguration {
           hostName = "nebunix";
           system = "x86_64-linux";
           userName = "john";
