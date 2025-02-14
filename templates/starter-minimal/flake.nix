@@ -7,19 +7,19 @@
   outputs =
     { nebunix, ... }@inputs:
     {
-      nixosConfigurations =
-        nebunix.utils.mkConfiguration {
-          systemInformation = {
-            hostName = "nebunix";
-            system = "x86_64-linux";
-            user = {
-              userName = "john";
-              fullName = "John Doe";
-            };
+      nixosConfigurations = nebunix.utils.mkConfiguration {
+        systemInformation = {
+          hostName = "nebunix";
+          system = "x86_64-linux";
+          user = {
+            userName = "john";
+            fullName = "John Doe";
           };
-          modules = [
-            inputs.nebunix-base.nixosModules.default
-          ];
         };
+        nebunixModules = with inputs; [
+          nebunix-base
+        ];
+        configPath = ./.;
+      };
     };
 }

@@ -10,7 +10,8 @@
         mkConfiguration =
           {
             systemInformation,
-            modules,
+            nebunixModules,
+            configPath,
           }:
           {
             "${systemInformation.hostName}" = nixpkgs.lib.nixosSystem {
@@ -21,13 +22,13 @@
               };
 
               modules = [
-                "./hosts/${systemInformation.hostName}/configuration.nix"
-                "./hosts/${systemInformation.hostName}/hardware-configuration.nix"
-              ] ++ modules;
+                (configPath + "/hosts/${systemInformation.hostName}/configuration.nix")
+                (configPath + "/hosts/${systemInformation.hostName}/hardware-configuration.nix")
+              ] ++ map (nebunixModule: nebunixModule.nixosModules.default);
             };
           };
       };
-    
+
       templates = {
         starter-minimal = {
           path = ./templates/starter-minimal;
