@@ -34,6 +34,7 @@
                       inherit userName;
                       inherit fullName;
                     };
+                    inherit hostName;
                   };
                 };
 
