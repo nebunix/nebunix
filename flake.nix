@@ -54,6 +54,11 @@
           path = ./templates/starter-minimal;
           description = "A minimal NixOS configuration using nebunix";
         };
+
+        nebunix-module = {
+          path = ./templates/nebunix-module;
+          description = "Base template for creating new nebunix modules";
+        };
       };
     };
 }
