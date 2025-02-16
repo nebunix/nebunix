@@ -28,11 +28,11 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1739735387,
-        "narHash": "sha256-Lamq52ua3noADDJzL/shIAeQJvP85Y+RCp0d/tcnPLM=",
+        "lastModified": 1739736143,
+        "narHash": "sha256-f2xabtJ/nA77T0XXwKi56Xj35yAqAOm090Xk4qsv3mY=",
         "owner": "nebunix",
         "repo": "nebunix",
-        "rev": "c02c940a3189d7db8e597f64c779c47eb47806cd",
+        "rev": "084aacfcaf430787ffc3693b6282a20a3c01be60",
         "type": "github"
       },
       "original": {
@@ -43,11 +43,11 @@
     },
     "nebunix-base": {
       "locked": {
-        "lastModified": 1739719872,
-        "narHash": "sha256-XULKtGAdYe1imrG544XreL6miRz4fpZ505zBc0OPxGc=",
+        "lastModified": 1739736299,
+        "narHash": "sha256-WM6uv62OgDflgp4kSvp4K7Bp3EPmN9fc+rEqgvjbxTM=",
         "owner": "nebunix",
         "repo": "base",
-        "rev": "5e75aa8a785a169c8bbf01a1d18b3a3ec4ec60b4",
+        "rev": "0fd9e79a30e0b3a3c888a48b4364e1fe42c0c80a",
         "type": "github"
       },
       "original": {
@@ -88,11 +88,11 @@
     },
     "nebunix-helix": {
       "locked": {
-        "lastModified": 1739736087,
-        "narHash": "sha256-lJrziVwNeZDvqzVgAA2Cxezqx3o5Ug5UE+DNcnTBQRI=",
+        "lastModified": 1739736327,
+        "narHash": "sha256-V28z1V9mjsdeNxebK2mTTtzoZnqwqbAfY3eDrke71wE=",
         "owner": "nebunix",
         "repo": "helix",
-        "rev": "5a44178d4909f5fb1959a28d963601bb6551db4a",
+        "rev": "0adff53b32624909fefb6c82d8670aef64faa199",
         "type": "github"
       },
       "original": {
@@ -103,11 +103,11 @@
     },
     "nebunix-kitty": {
       "locked": {
-        "lastModified": 1739719940,
-        "narHash": "sha256-PBrktY03MwT1+fSdbZpjSqROnkWdhtXtXsCzMGRBULc=",
+        "lastModified": 1739736352,
+        "narHash": "sha256-UoEfEXu0QSVc3LFwd9CRXnXK21p8hbkpWBnTN4tMl+E=",
         "owner": "nebunix",
         "repo": "kitty",
-        "rev": "2ef2a5267048b00271abbd6187178f34d57ee7aa",
+        "rev": "c85a2f0ce317e103cf18d62b9f068104a17f6630",
         "type": "github"
       },
       "original": {
@@ -133,11 +133,11 @@
     },
     "nebunix-sway": {
       "locked": {
-        "lastModified": 1739719349,
-        "narHash": "sha256-0rGCq222rLSkije58R7Ai3p0GmyVYiaRfboKXlKGVQE=",
+        "lastModified": 1739736376,
+        "narHash": "sha256-cOepZ2/ythSd3yYPKPwVG3mGsZsZENVHuYhrpcOm8Vk=",
         "owner": "nebunix",
         "repo": "sway",
-        "rev": "5fbbb906998b5ea7c47756cc05b1ce90646b25b4",
+        "rev": "c56e32da0a942c0fe136fdf33761b9158c254396",
         "type": "github"
       },
       "original": {
