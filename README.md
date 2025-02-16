@@ -24,8 +24,9 @@ $ nixos-generate-config --dir hosts/nebunix
 
 3. Set your desired user name by editing the `userName` variable in `flake.nix`.
 
-4. Edit the options in `hosts/nebunix/configuration.nix`. You'll at least want to
-change the `localization.consoleKeyMap` and `user.fullName` values.
+4. Edit the options in `hosts/nebunix/configuration.nix` according to your preferences.
+You'll probably want to change `localization.consoleKeyMap`, `localization.xkb.layout`,
+`localization.timeZone` and `user.fullName`.
 
 5. Set your desired host name by editing the `hostName` variable in `flake.nix`.
 The host name will be the name of your configuration. A common approach is to

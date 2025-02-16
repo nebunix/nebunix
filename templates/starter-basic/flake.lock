@@ -28,11 +28,11 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1739650068,
-        "narHash": "sha256-sETa+KwtWGVtvUjvVy+XBeb2fzuwZtg4XDGIakTH/vE=",
+        "lastModified": 1739721266,
+        "narHash": "sha256-kkS/xlDC3xoK5TEYazuYzRsznRTSj+6O3jA+kYTXWnQ=",
         "owner": "nebunix",
         "repo": "nebunix",
-        "rev": "653a3945db958531ce74c5823e016a6b379c21ca",
+        "rev": "bed4de8cfa1610c53fd5be039481c81d49b3638a",
         "type": "github"
       },
       "original": {
@@ -43,16 +43,91 @@
     },
     "nebunix-base": {
       "locked": {
-        "lastModified": 1739710502,
-        "narHash": "sha256-MWk3N211egZVI6MY2JKmZwztF3bMCG565Cv4fartHuk=",
+        "lastModified": 1739719872,
+        "narHash": "sha256-XULKtGAdYe1imrG544XreL6miRz4fpZ505zBc0OPxGc=",
         "owner": "nebunix",
         "repo": "base",
-        "rev": "fc2764c8623eff071f3dd07f1ae253539bddf013",
+        "rev": "5e75aa8a785a169c8bbf01a1d18b3a3ec4ec60b4",
         "type": "github"
       },
       "original": {
         "owner": "nebunix",
         "repo": "base",
+        "type": "github"
+      }
+    },
+    "nebunix-firefox": {
+      "locked": {
+        "lastModified": 1739719665,
+        "narHash": "sha256-1pXLtt8T+QUU90ykLcLWYwNSNzlDyDCk8RIXQXuxqXs=",
+        "owner": "nebunix",
+        "repo": "firefox",
+        "rev": "27107ef6c81bb8063cc3a44b4a832f8de2b6c6b8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nebunix",
+        "repo": "firefox",
+        "type": "github"
+      }
+    },
+    "nebunix-fish": {
+      "locked": {
+        "lastModified": 1739719908,
+        "narHash": "sha256-nkU0Ge7nDGHK7F3q3RQ7iiFqRmXeabvPa9vKfudYfJk=",
+        "owner": "nebunix",
+        "repo": "fish",
+        "rev": "1419b74cc922bc76ed6df78d8a21563298b5714f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nebunix",
+        "repo": "fish",
+        "type": "github"
+      }
+    },
+    "nebunix-helix": {
+      "locked": {
+        "lastModified": 1739650397,
+        "narHash": "sha256-gVbURjKD0HL60lM2CnogIkq+24ARS2sPU18nLNJZaDM=",
+        "owner": "nebunix",
+        "repo": "helix",
+        "rev": "7916cd12b547bec179c56fad704dd998bba47a42",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nebunix",
+        "repo": "helix",
+        "type": "github"
+      }
+    },
+    "nebunix-kitty": {
+      "locked": {
+        "lastModified": 1739719940,
+        "narHash": "sha256-PBrktY03MwT1+fSdbZpjSqROnkWdhtXtXsCzMGRBULc=",
+        "owner": "nebunix",
+        "repo": "kitty",
+        "rev": "2ef2a5267048b00271abbd6187178f34d57ee7aa",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nebunix",
+        "repo": "kitty",
+        "type": "github"
+      }
+    },
+    "nebunix-sway": {
+      "locked": {
+        "lastModified": 1739719349,
+        "narHash": "sha256-0rGCq222rLSkije58R7Ai3p0GmyVYiaRfboKXlKGVQE=",
+        "owner": "nebunix",
+        "repo": "sway",
+        "rev": "5fbbb906998b5ea7c47756cc05b1ce90646b25b4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nebunix",
+        "repo": "sway",
         "type": "github"
       }
     },
@@ -75,7 +150,12 @@
     "root": {
       "inputs": {
         "nebunix": "nebunix",
-        "nebunix-base": "nebunix-base"
+        "nebunix-base": "nebunix-base",
+        "nebunix-firefox": "nebunix-firefox",
+        "nebunix-fish": "nebunix-fish",
+        "nebunix-helix": "nebunix-helix",
+        "nebunix-kitty": "nebunix-kitty",
+        "nebunix-sway": "nebunix-sway"
       }
     }
   },
