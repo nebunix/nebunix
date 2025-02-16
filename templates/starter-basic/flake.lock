@@ -28,11 +28,11 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1739721266,
-        "narHash": "sha256-kkS/xlDC3xoK5TEYazuYzRsznRTSj+6O3jA+kYTXWnQ=",
+        "lastModified": 1739735387,
+        "narHash": "sha256-Lamq52ua3noADDJzL/shIAeQJvP85Y+RCp0d/tcnPLM=",
         "owner": "nebunix",
         "repo": "nebunix",
-        "rev": "bed4de8cfa1610c53fd5be039481c81d49b3638a",
+        "rev": "c02c940a3189d7db8e597f64c779c47eb47806cd",
         "type": "github"
       },
       "original": {
@@ -88,11 +88,11 @@
     },
     "nebunix-helix": {
       "locked": {
-        "lastModified": 1739650397,
-        "narHash": "sha256-gVbURjKD0HL60lM2CnogIkq+24ARS2sPU18nLNJZaDM=",
+        "lastModified": 1739736087,
+        "narHash": "sha256-lJrziVwNeZDvqzVgAA2Cxezqx3o5Ug5UE+DNcnTBQRI=",
         "owner": "nebunix",
         "repo": "helix",
-        "rev": "7916cd12b547bec179c56fad704dd998bba47a42",
+        "rev": "5a44178d4909f5fb1959a28d963601bb6551db4a",
         "type": "github"
       },
       "original": {
@@ -116,6 +116,21 @@
         "type": "github"
       }
     },
+    "nebunix-ly": {
+      "locked": {
+        "lastModified": 1739735227,
+        "narHash": "sha256-mXZUYPAfKJI4cPx3ViVWDox8iUoPyNszRGga4T2XbsE=",
+        "owner": "nebunix",
+        "repo": "ly",
+        "rev": "24e2f2ffcabd375ff5533694810b316ee6dbcf27",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nebunix",
+        "repo": "ly",
+        "type": "github"
+      }
+    },
     "nebunix-sway": {
       "locked": {
         "lastModified": 1739719349,
@@ -133,11 +148,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1739357830,
-        "narHash": "sha256-9xim3nJJUFbVbJCz48UP4fGRStVW5nv4VdbimbKxJ3I=",
+        "lastModified": 1739484910,
+        "narHash": "sha256-wjWLzdM7PIq4ZAe7k3vyjtgVJn6b0UeodtRFlM/6W5U=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "0ff09db9d034a04acd4e8908820ba0b410d7a33a",
+        "rev": "0b73e36b1962620a8ac551a37229dd8662dac5c8",
         "type": "github"
       },
       "original": {
@@ -155,6 +170,7 @@
         "nebunix-fish": "nebunix-fish",
         "nebunix-helix": "nebunix-helix",
         "nebunix-kitty": "nebunix-kitty",
+        "nebunix-ly": "nebunix-ly",
         "nebunix-sway": "nebunix-sway"
       }
     }
