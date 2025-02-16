@@ -6,6 +6,7 @@
     nebunix-fish.url = "github:nebunix/fish";
     nebunix-helix.url = "github:nebunix/helix";
     nebunix-kitty.url = "github:nebunix/kitty";
+    nebunix-ly.url = "github:nebunix/ly";
     nebunix-sway.url = "github:nebunix/sway";
   };
 
@@ -24,6 +25,7 @@
           nebunix-fish
           nebunix-helix
           nebunix-kitty
+          nebunix-ly
           nebunix-sway
         ];
         configPath = ./.;
