@@ -1,0 +1,84 @@
+{
+  "nodes": {
+    "home-manager": {
+      "inputs": {
+        "nixpkgs": [
+          "nebunix",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1739570999,
+        "narHash": "sha256-eCc0/Q4bPpe4/AS+uzIrHLJcR6BxPQ69q2kD0/Qe6rU=",
+        "owner": "nix-community",
+        "repo": "home-manager",
+        "rev": "254d47082e23dbf72fdeca1da6fe1da420f478d8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "ref": "release-24.11",
+        "repo": "home-manager",
+        "type": "github"
+      }
+    },
+    "nebunix": {
+      "inputs": {
+        "home-manager": "home-manager",
+        "nixpkgs": "nixpkgs"
+      },
+      "locked": {
+        "lastModified": 1739650068,
+        "narHash": "sha256-sETa+KwtWGVtvUjvVy+XBeb2fzuwZtg4XDGIakTH/vE=",
+        "owner": "nebunix",
+        "repo": "nebunix",
+        "rev": "653a3945db958531ce74c5823e016a6b379c21ca",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nebunix",
+        "repo": "nebunix",
+        "type": "github"
+      }
+    },
+    "nebunix-base": {
+      "locked": {
+        "lastModified": 1739710502,
+        "narHash": "sha256-MWk3N211egZVI6MY2JKmZwztF3bMCG565Cv4fartHuk=",
+        "owner": "nebunix",
+        "repo": "base",
+        "rev": "fc2764c8623eff071f3dd07f1ae253539bddf013",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nebunix",
+        "repo": "base",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1739357830,
+        "narHash": "sha256-9xim3nJJUFbVbJCz48UP4fGRStVW5nv4VdbimbKxJ3I=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "0ff09db9d034a04acd4e8908820ba0b410d7a33a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-24.11",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "nebunix": "nebunix",
+        "nebunix-base": "nebunix-base"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -22,9 +22,7 @@
             "${systemInformation.hostName}" = nixpkgs.lib.nixosSystem {
               inherit (systemInformation) system;
 
-              specialArgs = {
-                inherit systemInformation;
-              };
+              specialArgs = { inherit systemInformation; };
 
               modules = [
                 (configPath + "/hosts/${systemInformation.hostName}/configuration.nix")
@@ -39,7 +37,6 @@
                     { ... }:
                     {
                       imports = [
-
                         (configPath + "/hosts/${systemInformation.hostName}/home.nix")
                       ];
                     };
@@ -53,6 +50,11 @@
         starter-minimal = {
           path = ./templates/starter-minimal;
           description = "A minimal NixOS configuration using nebunix";
+        };
+
+        starter-basic = {
+          path = ./templates/starter-basic;
+          description = "A basic NixOS configuration using nebunix with a window manager, browser and terminal";
         };
 
         nebunix-module = {

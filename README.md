@@ -12,7 +12,7 @@ A set of pre-configured NixOS modules that fit nicely together.
 1. Initialise a new flake using the nebunix template:
 
 ```bash
-$ nix flake new --template github:nebunix/nebunix#starter-minimal ~/.nixos
+$ nix flake new --template github:nebunix/nebunix#starter-basic ~/.nixos
 $ cd ~/.nixos
 ```
 
