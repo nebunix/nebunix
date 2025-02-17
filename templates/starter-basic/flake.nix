@@ -8,6 +8,7 @@
     nebunix-kitty.url = "github:nebunix/kitty";
     nebunix-ly.url = "github:nebunix/ly";
     nebunix-sway.url = "github:nebunix/sway";
+    nebunix-wallpaper.url = "github:nebunix/wallpaper";
   };
 
   outputs =
@@ -27,6 +28,7 @@
           nebunix-kitty
           nebunix-ly
           nebunix-sway
+          nebunix-wallpaper
         ];
         configPath = ./.;
       };

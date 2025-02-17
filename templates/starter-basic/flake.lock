@@ -28,11 +28,11 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1739736440,
-        "narHash": "sha256-CwxQP4S4c8SmMRi0lDCsrsHucupxQt4OScGPkj4VBEA=",
+        "lastModified": 1739737160,
+        "narHash": "sha256-G3e9MmbXysofPyznpOT585lL1RFeCdzTytkKZhZGvt8=",
         "owner": "nebunix",
         "repo": "nebunix",
-        "rev": "1e7d9de562dc9b024d3352fcd9e690d8d6c1c550",
+        "rev": "eac3f93b9cd5cb73c4ef90bac10d8d06a1c7427a",
         "type": "github"
       },
       "original": {
@@ -146,6 +146,21 @@
         "type": "github"
       }
     },
+    "nebunix-wallpaper": {
+      "locked": {
+        "lastModified": 1739776305,
+        "narHash": "sha256-nihpJod9nE4vQHvijMekMKD17A4o+e87q5bmgEYknN0=",
+        "owner": "nebunix",
+        "repo": "wallpaper",
+        "rev": "2005d2df45320191ee6f55388a357904e839ec69",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nebunix",
+        "repo": "wallpaper",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1739484910,
@@ -171,7 +186,8 @@
         "nebunix-helix": "nebunix-helix",
         "nebunix-kitty": "nebunix-kitty",
         "nebunix-ly": "nebunix-ly",
-        "nebunix-sway": "nebunix-sway"
+        "nebunix-sway": "nebunix-sway",
+        "nebunix-wallpaper": "nebunix-wallpaper"
       }
     }
   },

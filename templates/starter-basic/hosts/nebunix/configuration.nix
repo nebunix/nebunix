@@ -19,6 +19,8 @@
       shell = "fish";
     };
 
+    wallpaper.path = ../../assets/wallpapers/nebula.jpg;
+
     fonts.monospaceFont = "JetBrains Mono Nerd Font Mono";
   };
 }
