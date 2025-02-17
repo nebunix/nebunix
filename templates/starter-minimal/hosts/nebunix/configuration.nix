@@ -1,6 +1,7 @@
 { ... }:
+
 {
-  config.nebunix = {
+  nebunix = {
     user = {
       fullName = "John Doe";
     };
