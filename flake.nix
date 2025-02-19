@@ -19,7 +19,6 @@
       home-manager,
       nixpkgs,
       nixpkgs-unstable,
-      programsdb,
       ...
     }:
     {
@@ -43,20 +42,6 @@
                     nixpkgs.overlays = [
                       (final: prev: { unstable = nixpkgs-unstable.legacyPackages.${systemInformation.system}; })
                     ];
-                  }
-                )
-
-                (
-                  { ... }:
-                  {
-                    environment.etc."programs.sqlite".source =
-                      programsdb.packages.${systemInformation.system}.programs-sqlite;
-
-                    home-manager.users."${systemInformation.userName}" =
-                      { ... }:
-                      {
-                        programs.command-not-found.dbPath = "/etc/programs.sqlite";
-                      };
                   }
                 )
 
