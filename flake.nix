@@ -28,12 +28,15 @@
             systemInformation,
             nebunixModules,
             configPath,
+            specialArgs ? { },
           }:
           {
             "${systemInformation.hostName}" = nixpkgs.lib.nixosSystem {
               inherit (systemInformation) system;
 
-              specialArgs = { inherit systemInformation; };
+              specialArgs = {
+                inherit systemInformation;
+              } // specialArgs;
 
               modules = [
                 (
@@ -53,6 +56,9 @@
                   home-manager.useGlobalPkgs = true;
                   home-manager.useUserPackages = true;
                   home-manager.backupFileExtension = "backup";
+                  home-manager.extraSpecialArgs = {
+                    inherit systemInformation;
+                  } // specialArgs;
                   home-manager.users."${systemInformation.userName}" =
                     { ... }:
                     {
